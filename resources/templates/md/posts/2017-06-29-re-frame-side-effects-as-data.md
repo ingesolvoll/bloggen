@@ -1,7 +1,7 @@
 {:title "Re-frame: side effects as data"
  :layout :post
  :klipse true
- :tags  ["re-frame reagent clojurescript klipse"]}
+ :tags  ["re-frame" "reagent" "clojurescript" "klipse"]}
 
 Re-frame has a simple but powerful architecture that enables you to express yourself
 in pure data structures even with side-effect heavy code.

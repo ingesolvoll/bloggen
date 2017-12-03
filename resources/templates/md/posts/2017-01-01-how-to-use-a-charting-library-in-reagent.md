@@ -1,7 +1,7 @@
 {:title "How to use a charting library in Reagent"
  :layout :post
  :klipse true
- :tags  ["reagent clojurescript klipse"]}
+ :tags  ["reagent"  "klipse" "clojurescript"]}
 
 ### Charting in javascript
 There are several high quality charting libraries made for the browser. I chose Highcharts for this demo. Highcharts is an excellent commercial charting library with both great looking charts and simple configuration. I'm going to use this [example] as a basis for this demonstration.
@@ -16,7 +16,8 @@ First, we need to load Reagent, React and highcharts into the page. This should 
 ```
 
 The config for our chart will reside in a reagent `atom`, allowing us to live-configure the chart later on.
-```klipse-cljs(def config-atom (r/atom nil))
+```klipse-cljs
+(def config-atom (r/atom nil))
 ```
 
 Now we make the reagent component that will render our chart. We hook on to the React lifecycle event `component-did-mount` to render the chart when our component has been added to the DOM. We also include `component-did-update` to re-render the chart on your config changes.

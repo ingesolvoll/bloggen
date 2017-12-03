@@ -1,8 +1,7 @@
----
-layout: post
-title:  "Leiningen: A new contender in the JS build tool battle?"
-date:   2017-08-25 12:00:00 +0100
----
+{:title "Leiningen: A new contender in the JS build tool battle?"
+ :layout :post
+ :tags  ["clojure"]
+ :draft? true}
 
 We have come a very long way in web development. With a bit of effort, you can set up a professional
 and higly productive build environment for your JS project. And new tools and ideas keep popping up.

@@ -1,8 +1,7 @@
----
-layout: post
-title:  "JSX vs Clojurescript: the showdown"
-date:   2017-06-22 19:00:00 +0100
----
+{:title "JSX vs Clojurescript: the showdown"
+ :layout :post
+ :klipse true
+ :tags  ["reagent" "react" "jsx" "clojurescript"]}
 
 > > What's the point in using ClojureScript with Om/Reagent/Rum/Quiescent instead of plain ReactJS? Is it better or is it just different?
 
@@ -16,20 +15,20 @@ We'll be comparing ReactJS/JSX (JavaScript) with [Reagent] (ClojureScript ReactJ
 The app we're making is a Tic-tac-toe game. The most basic building block for this game will be the `square` component, representing one clickable square on the board.
 
 **JSX**
-{% highlight js %}
+```
 const Square = (props) =>
 <button className="square" onClick={props.onClick}>
   {props.value}
 </button>
-{% endhighlight %}
+```
 
 **Reagent**
 
-{% highlight clojure %}
+```
 (defn square [value on-click]
   [:button.square {:on-click on-click}
    value])
-{% endhighlight %}
+```
 
 Clojure is without doubt a more concise language than JS. It also has a very neat standard for representing markup, called **Hiccup**. Here's the complete Hiccup syntax guide:
 
@@ -51,8 +50,7 @@ Some people love JSX, others don't. The code formatter on this blog clearly does
 When you click on a square, our handler is called. I modified the official example slightly, putting the side effect free code in a [pure function].
 
 **Javascript**
-{% highlight js %}
-
+```
 function makeMove(state, i) {
   if (state.squares[i]) {
     return state;
@@ -68,11 +66,11 @@ function makeMove(state, i) {
 handleClick(i) {
   this.setState(makeMove(this.state, i));
 }
-{% endhighlight %}
+```
 
 
 **Clojurescript**
-{% highlight clojure %}
+```
 
 (defn make-move [state i]
   (if (-> state :squares (get i))
@@ -83,7 +81,7 @@ handleClick(i) {
 
 (defn handle-click [i]
   (swap! state make-move i))
-{% endhighlight %}
+```
 
 The Javascript code listed above is written with immutability in mind, because the React developers see the value of promoting that style. But functional programming in Javascript requires knowledge and discipline. Like applying the little `slice()` copy trick in `makeMove`.
 
@@ -94,7 +92,7 @@ In Clojure, immutability is the default. In my opinion that's the steepest learn
 The main render function connects the smaller parts into a whole. As you can see below, most of the differences have already been covered. Please review for yourself the pros and cons of each approach:
 
 **JSX render function**
-{% highlight js %}
+```
 render() {
     let status = "Next player: ${this.state.xIsNext ? 'X' : 'O'}";
     return (
@@ -107,10 +105,10 @@ render() {
       </div>
     );
   }
-{% endhighlight %}
+```
 
 **Reagent render function**
-{% highlight clojure %}
+```
 (defn render [state]
   (let [square (partial square state)]
     [:div
@@ -119,7 +117,7 @@ render() {
      [:div.board-row (doall (map square [3 4 5]))]
      [:div.board-row (doall (map square [6 7 8]))]
      [:button {:on-click #(reset! state (vanilla-state))} "Reset game!"]]))
-{% endhighlight %}
+```
 
 ### Conclusion: Code vs Data
 
