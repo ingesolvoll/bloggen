@@ -1,14 +1,14 @@
-{:site-title           "My Awesome Blog"
- :author               "Bob Bobbert"
+{:site-title           "Inge Solvoll's Blog"
+ :author               "Inge Solvoll"
  :description          "This blog is awesome"
- :site-url             "http://blogawesome.com/"
+ :site-url             "http://ingesolvoll.github.io/"
  :post-root            "posts"
  :page-root            "pages"
  :post-root-uri        "posts-output"
  :page-root-uri        "pages-output"
  :tag-root-uri         "tags-output"
  :author-root-uri      "authors-output"
- :blog-prefix          "/blog"
+ :blog-prefix          ""
  :rss-name             "feed.xml"
  :rss-filters          ["cryogen"]
  :recent-posts         3
@@ -25,7 +25,7 @@
  :ignored-files        [#"\.#.*" #".*\.swp$"]
  :posts-per-page       5
  :blocks-per-preview   2
- :previews?            false
+ :previews?            true
  :clean-urls?          true
  :hide-future-posts?   true
  :klipse               {:settings {:selector           ".klipse-cljs"
