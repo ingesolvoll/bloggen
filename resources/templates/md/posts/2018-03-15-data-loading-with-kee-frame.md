@@ -29,3 +29,13 @@ But it has some important disadvantages.
 * Your view code is no longer purely declarative
 * Your data graph might not match very well with your UI graph.
 * Having your data loading events littered around in your UI code makes them very hard to find and follow.
+
+## Code reloading
+
+Another issue to consider is your figwheel workflow. Let's pretend you are currently working on this customer list component, saving your
+file every 10 seconds to see how it's shaping up. Every time you trigger another compile and render, an AJAX request is triggered by
+the `:fetch-customers` event. To me this pattern is purely accidental and it does not make sense. It could also slow down your
+feedback loop.
+
+## URL is boss
+
