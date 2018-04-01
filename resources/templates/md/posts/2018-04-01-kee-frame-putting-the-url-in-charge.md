@@ -1,6 +1,6 @@
 {:title "Kee-frame: Putting the URL in charge"
  :layout :post
- :tags  ["clojurescript re-frame kee-frame"]}
+ :tags  ["clojurescript" "re-frame" "kee-frame"]}
 
 Most developers will claim that TDD is part of their daily routine. But most of us fail to mention
 our actual favorite methodology, SDD.
