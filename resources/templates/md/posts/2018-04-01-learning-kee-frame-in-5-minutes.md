@@ -17,7 +17,7 @@ lein new re-frame <your-project-name>
 Once you have a working re-frame project, just add kee-frame as a dependency to your project:
 
 ```clojure
-[kee-frame "0.1.8"]
+[kee-frame "0.2.1"]
 ```
 
 Now run `lein figwheel` and we're good to go.
@@ -110,7 +110,7 @@ Trigger a browser navigation to the URL `/league/3/table`:
 Generate a good old href from plain data:
 
 ```clojure
-[:a.nav-link {:href (k/path-for :league :id 3 :tab :fixtures)} "Latest results"]
+[:a.nav-link {:href (k/path-for [:league :id 3 :tab :fixtures])} "Latest results"]
 ```
 
 Render different views depending on what URL you're on
