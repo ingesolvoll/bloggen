@@ -28,6 +28,6 @@
  :previews?            true
  :clean-urls?          true
  :hide-future-posts?   true
- :klipse               {:settings {:selector           ".klipse-cljs"
-                                   :selector-reagent   ".klipse-reagent" }}
+ :klipse               {:settings {:selector         ".klipse-cljs"
+                                   :selector-reagent ".klipse-reagent"}}
  :debug?               false}
