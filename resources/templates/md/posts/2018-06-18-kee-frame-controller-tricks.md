@@ -2,10 +2,10 @@
  :layout :post
  :tags  ["clojurescript" "re-frame" "kee-frame"]}
 
-##  Controllers
+##  The power of controllers
 The [controller rules](https://github.com/ingesolvoll/kee-frame#controller-state-transitions), taken from [keechma](https://keechma.com/),
-are centered around pure route data. That's really powerful, as you can use the full
-power of Clojure to get what you want from your controllers. Often the solution is dead simple, but it's not always easy to spot.
+are centered around pure route data. That's really powerful, as you can use mostly plain Clojure to get what you want 
+from your controllers. Often the solution is dead simple, but it's not always easy to spot.
 This is a guide to the most useful tricks, it will be expanded as new ones appear!
 
 ## How to trigger an event once, at startup
