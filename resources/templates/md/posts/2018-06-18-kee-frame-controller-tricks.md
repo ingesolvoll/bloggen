@@ -14,6 +14,7 @@ So you want something to happen only once, but immediately. Things like:
 * Fetching initial data from the server
 * Start a polling loop
 * Letting the user know we are loaded and ready to go 
+* Forcing the user to express her never ending love for cookies.
 
 What you need is a `:params` function that triggers start when invoked for the first time, and then always returns the 
 same result as the first invocation. That sounds like a plain Clojure function that we all know:
