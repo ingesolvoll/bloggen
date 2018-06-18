@@ -14,7 +14,7 @@ Netbeans platform in Java. After a couple years the company started moving more 
 with Clojure. Since then I've mostly worked with Clojure web servers and Single Page Applications written in Clojurescript.
 
 ## Clojure
-I've been in love with many different technologies during my carreer. Struts, Tapestry, Groovy, Coffeescript, AngularJS.
+I've been in love with many different technologies during my career. Struts, Tapestry, Groovy, Coffeescript, AngularJS.
 They were all great for a year or two, and then I got bored. I was expecting the same to happen with Clojure, 
 but it's been quite a few years now and the love is still strong.
 
