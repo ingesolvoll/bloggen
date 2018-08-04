@@ -17,7 +17,7 @@ lein new re-frame <your-project-name>
 Once you have a working re-frame project, just add kee-frame as a dependency to your project:
 
 ```clojure
-[kee-frame "0.2.6"]
+[kee-frame "0.2.7"]
 ```
 
 Now run `lein figwheel` and we're good to go.
