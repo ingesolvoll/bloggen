@@ -1,5 +1,6 @@
 {:title "Kee-frame patterns: master/detail"
  :layout :post
+ :draft? true
  :tags  ["clojurescript" "re-frame" "kee-frame"]}
 
 ## The problem
