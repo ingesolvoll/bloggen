@@ -3,6 +3,11 @@
  :klipse true
  :tags  ["reagent"  "klipse" "clojurescript"]}
 
+# This post is outdated
+The technique detailed in this blog post works. But there is a cleaner way, recommended by the re-frame team.
+
+[Read the updated guide here](/posts/2018-12-04-revisited-how-to-use-a-charting-library-in-re-frame/)
+
 ### Charting in javascript
 There are several high quality charting libraries made for the browser. I chose Highcharts for this demo. Highcharts is an excellent commercial charting library with both great looking charts and simple configuration. I'm going to use this [example] as a basis for this demonstration.
 
